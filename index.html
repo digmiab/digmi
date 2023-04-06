@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Firebase App</title>
+  <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-firestore.js"></script>
+  <script>
+    // Initialize Firebase
+    var firebaseConfig = {
+  apiKey: "AIzaSyAKej7J9h6gPgHo1iPOutC_-CGo2lf1ZR4",
+  authDomain: "digmistorage.firebaseapp.com",
+  projectId: "digmistorage",
+  storageBucket: "digmistorage.appspot.com",
+  messagingSenderId: "627844945927",
+  appId: "1:627844945927:web:b3bf9c9bb107d8fe26f2a2",
+  measurementId: "G-6KD4E6BYSC"
+};
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <title>File Upload Form</title>
+</head>
+<body>
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+		<label for="company-name">Company Name:</label>
+		<input type="text" id="company-name" name="company-name" required>
+		<br><br>
+
+		<label for="file">Select a file:</label>
+		<input type="file" id="file" name="file" required accept="image/*,video/*">
+		<br><br>
+
+		<input type="submit" value="Upload">
+	</form>
+
+	<script src="script.js"></script>
+</body>
+</html>
