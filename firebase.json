@@ -15,7 +15,7 @@
     }
   ],
   "hosting": {
-    "public": "public/digmi",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
